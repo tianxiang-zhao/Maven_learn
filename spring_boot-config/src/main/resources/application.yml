@@ -1,0 +1,20 @@
+spring:
+  profiles:
+    active: prod
+
+---
+server:
+  port: 8083
+spring:
+  profiles:dev
+person:
+  last-name: zhangsan
+
+---
+
+server:
+  port: 8084
+spring:
+  profiles:prod
+person:
+  last-name: zhangsan
