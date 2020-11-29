@@ -56,8 +56,6 @@ public class EmployeeController {
 
         Collection<Department> departments=departmentDao.getDepartments();
         model.addAttribute("depts",departments);
-
-
          return "emps/add";
     }
 }

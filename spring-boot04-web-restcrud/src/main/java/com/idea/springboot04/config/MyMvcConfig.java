@@ -4,6 +4,10 @@ package com.idea.springboot04.config;
 
 import com.idea.springboot04.component.LocalResolver;
 import com.idea.springboot04.component.loginHandler;
+import org.springframework.boot.autoconfigure.web.embedded.EmbeddedWebServerFactoryCustomizerAutoConfiguration;
+import org.springframework.boot.web.server.ConfigurableWebServerFactory;
+import org.springframework.boot.web.server.WebServerFactory;
+import org.springframework.boot.web.server.WebServerFactoryCustomizer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.LocaleResolver;
@@ -35,4 +39,8 @@ public class MyMvcConfig implements WebMvcConfigurer {
     public LocaleResolver  localeResolver(){
         return new LocalResolver();
     }
+
+
+
+
 }
